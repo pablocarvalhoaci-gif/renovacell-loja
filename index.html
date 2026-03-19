@@ -78,16 +78,11 @@ const db = firebase.firestore();
 let carrinho = [];
 
 function registrar(){
-auth.createUserWithEmailAndPassword(email.value, senha.value);
+  alert('Login liberado sem cadastro');
 }
-
-function login(){
-auth.signInWithEmailAndPassword(email.value, senha.value)
-.then(()=>{
-loginCard.classList.add('hidden');
-sistema.classList.remove('hidden');
-carregarProdutos();
-});
+  document.getElementById('loginCard').classList.add('hidden');
+  document.getElementById('sistema').classList.remove('hidden');
+  carregarProdutos();
 }
 
 async function carregarProdutos(){
