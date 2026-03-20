@@ -68,7 +68,25 @@ const firebaseConfig = {
 apiKey: "SUA_KEY",
 authDomain: "SEU_APP.firebaseapp.com",
 projectId: "SEU_ID"
-};
+};<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAY53Rkgq3T4gEW_EdLBXfkDIv8UIZ7CDQ",
+    authDomain: "renovacell-2026.firebaseapp.com",
+    projectId: "renovacell-2026",
+    storageBucket: "renovacell-2026.firebasestorage.app",
+    messagingSenderId: "575721070967",
+    appId: "1:575721070967:web:d5a2330e683072ac084172"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
